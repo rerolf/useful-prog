@@ -1,7 +1,7 @@
-/*--------------ИСПОЛЬЗОВАНИЕ--------------
+/*--------------USE--------------
 #include <simpletimer.h>
-в начале функции main создать объект класса:
-simpletimer имя;
+in the beginnign of main() function, add a class object;
+simpletimer name;
 */
 #pragma once
 #include <chrono>
@@ -27,5 +27,5 @@ simpletimer::~simpletimer()
   end = std::chrono::high_resolution_clock::now();
   duration = end - start;
   float result = duration.count();
-  std::cout << "\nПрошло времени "<< result << " секунд\n";
+  std::cout << "\nDuration "<< result << " seconds\n";
 }
