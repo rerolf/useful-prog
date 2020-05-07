@@ -1,5 +1,5 @@
 /*--------------USE--------------
-#include <simpletimer.h>
+#include "simpletimer.h"
 in the beginnign of main() function, add a class object;
 simpletimer name;
 */
