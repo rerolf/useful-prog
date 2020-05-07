@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <cstring>
+#include <vector>
+#include <algorithm>
 #include <string>
 using namespace std;
 int main(int argc,char* argv[])
@@ -30,9 +32,15 @@ int main(int argc,char* argv[])
     }
     if(argv[1]==read){
       std::string msg="";
+      std::vector<std::string> arr;
       while(!fout.eof()){
         while(getline(fout,msg)){
-          std::cout << msg<<"\n";
+          arr.push_back(msg);
+        }
+        std::sort(arr.begin(),arr.end());
+        for(std::vector<string>::iterator i = arr.begin(); i != arr.end(); i++)
+        {
+          cout << *i << "\n";
         }
       }
     }
