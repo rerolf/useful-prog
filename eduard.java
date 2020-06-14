@@ -27,7 +27,6 @@ public class test {
 			if(Math.abs(X[iterator])%1.0!=0.0) counterOdd++;
 			if((Math.abs(X[iterator])%2.0==0.0)&&(X[iterator]<minEven)) minEven = X[iterator];
 		}
-		System.out.println(counterOdd);
 		if(counterOdd!=0) {
 			double[] lessArray = new double[counterOdd];
 			int lengthCounter =0;
